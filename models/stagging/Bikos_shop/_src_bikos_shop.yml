@@ -1,0 +1,7 @@
+sources:
+  - name: Hbiko
+    database: raw
+    schema: Hbiko
+    tables:
+      - name: customers
+      - name: orders
