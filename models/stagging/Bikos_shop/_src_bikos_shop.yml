@@ -1,7 +1,7 @@
 sources:
-  - name: Hbiko
+  - name: jaffle_shop
     database: raw
-    schema: Hbiko
+    schema: jaffle_shop
     tables:
       - name: customers
       - name: orders
