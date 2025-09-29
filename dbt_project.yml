@@ -38,7 +38,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
  Henry_Biko_shop:
     # Applies to all files under models/stagging/
-    stagging:
+    staging:
       +materialized: view
     
     marts:
