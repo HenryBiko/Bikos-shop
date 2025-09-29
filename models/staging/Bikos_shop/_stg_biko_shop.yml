@@ -20,10 +20,9 @@ models:
       #           - placed
       #           - returned_pending
       #           - returned
-    
+
       - name: customer_id
         data_tests:
           - relationships:
               field: customer_id
               to: ref('stg_biko_shop_customers')
-
