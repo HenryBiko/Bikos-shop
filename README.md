@@ -1,15 +1,37 @@
-Welcome to your new dbt project!
+# Bikos-shop
 
-### Using the starter project
+A dbt analytics engineering project for the Bikos shop.
 
-Try running the following commands:
-- dbt run
-- dbt test
+> 🚧 **Work in progress.** The project scaffold and example models are in place; shop-specific staging and mart models are next.
 
+## Stack
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [dbt community](https://getdbt.com/community) to learn from other analytics engineers
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+- **dbt** for transformations, tests, and documentation
+- SQL models organized under `models/`
+
+## Project structure
+
+```
+Bikos-shop/
+├── dbt_project.yml      # project config
+├── models/
+│   └── example/         # starter models + schema tests
+├── analyses/            # ad hoc analytical SQL
+├── macros/              # reusable Jinja/SQL macros
+├── seeds/               # static CSV reference data
+├── snapshots/           # SCD Type 2 history
+└── tests/               # custom data tests
+```
+
+## Run it
+
+```bash
+dbt deps
+dbt run      # build models
+dbt test     # run schema and data tests
+dbt docs generate && dbt docs serve
+```
+
+## Author
+
+**Henry Biko** · [GitHub](https://github.com/HenryBiko) · [LinkedIn](https://www.linkedin.com/in/henrybiko)
